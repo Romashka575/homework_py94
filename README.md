@@ -1,4 +1,11 @@
-This project include 3 programs:
-Calculator - for basic calculation operations
-Guessing_game - game where you should guess 3 numbers from random range
-Auth_system - basic programm for login and registration
+Создать класс Moving сделать метод move, который вызывает исключение NotImplementedError (про него здесь)
+
+Создать классы Animal, Transport и отнаследовать их от класса Moving. У первого создать метод voice который так же вызывает вышеупомянутое исключение. У второго - метод launch так же с исключением.
+
+Создать классы Duck, Tiger, Car. Где первые два - отнаследовать от Animal, Car - от Transport. У Duck, Tiger переопределить метод voice где тигр рычит а утка крякает, и метод move - тигр бегает, утка плавает.
+
+У машины переопределить метод move - она должна ездить, и метод launch машина должна заводится.
+
+Создать по экземпляру (утку, тигра и машину) - вызвать всевозможные методы, убедившись что все работает.
+
+* у класса Car сделать атрибут статус (заведена, не заведена). Менять его когда вызываем метод launch. в методе move сделать проверку по этому атрибуту, если машина не заведена - не двигаться.
