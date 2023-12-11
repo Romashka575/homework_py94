@@ -1,4 +1,14 @@
-This project include 3 programs:
-Calculator - for basic calculation operations
-Guessing_game - game where you should guess 3 numbers from random range
-Auth_system - basic programm for login and registration
+Создать класс DataStorage. 
+Конструктор принимает на вход путь к файлу json, который в дальнейшем нельзя изменить снаружи. 
+Так же определяем атрибуты 
+status - изначально disconnected
+content - изначально None
+
+Реализовать методы
+_create_storage создает файл по принятому в конструктор пути и возвращает экземпляр файла.
+connect возвращает экземпляр файла (open), меняет статус на connected и присваивает в атрибут content - содержимое файла если файл найден, если нет, вызывает метод _create и делает то же самое.
+disconnect берет файл, закрывает его и выводит в консоль сообщение об этом
+
+Создать класс DataStorageWrite
+Переопределить методы connect и _create таким образом, что бы файл был готов к добавлению контента. При этом content так же выдавал содержимое файла.
+Определить метод append который принимает строку, которую мы записываем в файл. После disconnect - мы можем наблюдать обновленный файл.
